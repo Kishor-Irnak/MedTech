@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#medicineResults {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.medicine-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.medicine-card img {
+  max-width: 100px;
+  height: auto;
+}
+
+button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005f73;
+}
