@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Medicine Finder</h1>
+    <nav>
+      <ul>
+        <li><a href="#addMedicine">Add Medicine</a></li>
+        <li><a href="#searchMedicine">Search Medicine</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="addMedicine" class="container">
+    <h2>Add Medicine</h2>
+    <form id="medicineForm">
+      <label for="medicineName">Medicine Name:</label>
+      <input type="text" id="medicineName" required>
+
+      <label for="medicineImage">Image URL:</label>
+      <input type="url" id="medicineImage" required>
+
+      <label for="medicineLocation">City:</label>
+      <input type="text" id="medicineLocation" required>
+
+      <label for="medicinePrice">Price:</label>
+      <input type="number" id="medicinePrice" required>
+
+      <button type="submit">Add Medicine</button>
+    </form>
+  </section>
+
+<section id="searchMedicine" class="container">
+  <h2>Search Medicine</h2>
+  <label for="searchInput">Medicine Name:</label>
+  <input type="text" id="searchInput" placeholder="Enter medicine name">
+
+  <label for="locationInput">Location:</label>
+  <input type="text" id="locationInput" placeholder="Enter your city">
+
+  <div id="medicineResults"></div>
+</section>
+
+
+    <div id="medicineResults"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
